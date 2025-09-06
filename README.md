@@ -6,20 +6,20 @@ Transformers have revolutionized deep learning across domains such as natural la
 
 Key Features
 
-Fixed-Point Arithmetic (Q5.10):
-Replaces floating-point operations with a compact 16-bit fixed-point format, reducing hardware complexity while maintaining numerical stability.
+  - Fixed-Point Arithmetic (Q5.10):
+  Replaces floating-point operations with a compact 16-bit fixed-point format, reducing hardware complexity while maintaining numerical stability.
 
-Custom Multiply–Accumulate (MAC) Unit:
-Enables efficient matrix multiplications for Query, Key, and Value projections.
+  - Custom Multiply–Accumulate (MAC) Unit:
+  Enables efficient matrix multiplications for Query, Key, and Value projections.
 
-Softmax Approximation:
-Implemented using lookup tables (LUTs), piecewise linear interpolation, and deterministic truncation, allowing real-time exponential evaluation without costly floating-point hardware.
+  - Softmax Approximation:
+  Implemented using lookup tables (LUTs), piecewise linear interpolation, and deterministic truncation, allowing real-time exponential evaluation without costly floating-point hardware.
 
-Python-to-Verilog Workflow:
-A Python reference model validates correctness before migration to Verilog. Inputs are quantized into Q5.10 format and compared across both implementations to ensure functional accuracy.
+  - Python-to-Verilog Workflow:
+  A Python reference model validates correctness before migration to Verilog. Inputs are quantized into Q5.10 format and compared across both implementations to ensure functional accuracy.
 
-Verification & Performance:
-Side-by-side testing demonstrates correctness of the Verilog design, with substantial runtime improvements over the Python baseline, highlighting the potential of dedicated accelerators for low-latency and low-power inference.
+  - Verification & Performance:
+  Side-by-side testing demonstrates correctness of the Verilog design, with substantial runtime improvements over the Python baseline, highlighting the potential of dedicated accelerators for low latency and lowpower inference.
 
 Outcomes
 
